@@ -18,3 +18,6 @@ methods. Brainstormed ideas below:
 ## Tech
 - Python
 - OpenCV
+
+## Sources
+https://www.pyimagesearch.com/2019/08/26/building-an-image-hashing-search-engine-with-vp-trees-and-opencv/

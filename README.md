@@ -29,6 +29,16 @@ detected card.
 ## Future work
 
 - Detection phase with Deep Learning
+  - Probably use semantic segmentation  
+    - <https://github.com/qubvel/segmentation_models>
+    - [This](https://openaccess.thecvf.com/content_cvpr_2018/papers/Ma_DocUNet_Document_Image_CVPR_2018_paper.pdf) architecture warps
+  text documents (document scanners). Interesting idea but it seeems like an
+  overkill.
+- The hash database is just a Python dictionary. I am naively searching in a
+linear fashion. The complexity can be improved with data structures that are
+appropriate for similarity search e.g. VP-trees. Alternatively, if we would like
+to have a real-world sized database we could use Postgre database as it (AFAIK)
+has implemented Hamming distance similarity search.
 
 ## Sources
 

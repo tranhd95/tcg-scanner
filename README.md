@@ -26,6 +26,11 @@ detected card.
 
 ![TCG Scanner Demo](tcg-scanner-demo.webp)
 
+## TODO
+
+- [ ] Build a artificial dataset for segmentation. Put cards with random transformations on different backgrounds.
+- [ ] Train segmentation model. Possibly with this library <https://github.com/qubvel/segmentation_models>
+
 ## Future work
 
 - Detection phase with Deep Learning
@@ -34,11 +39,14 @@ detected card.
     - [This](https://openaccess.thecvf.com/content_cvpr_2018/papers/Ma_DocUNet_Document_Image_CVPR_2018_paper.pdf) architecture warps
   text documents (document scanners). Interesting idea but it seeems like an
   overkill.
-- The hash database is just a Python dictionary. I am naively searching in a
+- The hash database is just a Python dictionary. We are naively searching in a
 linear fashion. The complexity can be improved with data structures that are
 appropriate for similarity search e.g. VP-trees. Alternatively, if we would like
 to have a real-world sized database we could use Postgre database as it (AFAIK)
 has implemented Hamming distance similarity search.
+- We are hashing the whole card. It would be probably better if we would hash
+only a part of the card (e.g. the card's artwork) or extracted features. This
+could improve the accuracy and speed.
 
 ## Sources
 

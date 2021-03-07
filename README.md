@@ -28,8 +28,13 @@ detected card.
 
 ## TODO
 
-- [ ] Build a artificial dataset for segmentation. Put cards with random transformations on different backgrounds.
-- [ ] Train segmentation model. Possibly with this library <https://github.com/qubvel/segmentation_models>
+- [x] Build a artificial dataset for segmentation. Put cards with random transformations on different backgrounds.
+  - ![Generated](ex_6.png) ![Mask](mask_6.png)
+- [x] Train segmentation model. Possibly with this library <https://github.com/qubvel/segmentation_models>
+  - [Notebook](https://github.com/tranhd95/tcg-scanner/blob/main/Card_Segmentation.ipynb)
+- [ ] Optimize segmentation model.
+  - Model's performance is not that good. We should try to add more background
+  images.
 
 ## Future work
 
